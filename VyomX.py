@@ -57,7 +57,7 @@ try:
         [sys.executable, logicpy_heart] + sys.argv[1:],
         cwd=extract_zone,
         check=True,
-        timeout=180,
+  
         env=os.environ.copy()
     )
 except subprocess.CalledProcessError as e:
